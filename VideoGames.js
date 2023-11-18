@@ -1,5 +1,9 @@
 const {Media} = require("./Media");
 
+
+
+//-- import inheritance from media class for videogames class
+//-- VideoGame is a child of Media
 class VideoGame extends Media{
     constructor(newName, platform, players) {
         super(newName);
@@ -14,11 +18,15 @@ class VideoGame extends Media{
     }
 }
 
-let someVideoGame = new VideoGame("Runescape", "PC", 4);
-// console.log(someVideoGame.name);
-// console.log(`platform: ${someVideoGame.platform}`);
-// console.log(`# of players: ${someVideoGame.players}`);
-// console.log(someVideoGame.getMediaName());
-// console.log(someVideoGame.version());
-console.log(someVideoGame.getVideoGame());
-console.log(Media.count);
+// let someVideoGame = new VideoGame("Runescape", "PC", 4);
+// // console.log(someVideoGame.name);
+// // console.log(`platform: ${someVideoGame.platform}`);
+// // console.log(`# of players: ${someVideoGame.players}`);
+// // console.log(someVideoGame.getMediaName());
+// // console.log(someVideoGame.version());
+// console.log(someVideoGame.getVideoGame());
+// console.log(Media.count);
+
+module.exports = {
+    VideoGame
+}
