@@ -5,7 +5,7 @@ import PokemonDisplay from './PokemonDisplay';
 function App() {
   return (
     <div className="App">
-      <h1>Class components lesson</h1>
+      <h1>Class components lesson. Pokemon Name</h1>
       <PokemonDisplay />
     </div>
   );
